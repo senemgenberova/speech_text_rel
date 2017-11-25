@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.user.speechtextapp.MainActivity">
+
+        <EditText
+            android:id="@+id/textToSpeechTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:hint="Enter text and press button below"/>
+
+        <ImageView
+            android:id="@+id/btnToSpeech"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/to_speech_icon"
+            android:onClick="textToSpeech"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/textToSpeechTxt"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/speechToTextTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press button for speech"
+            android:textSize="30dp"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/btnToText"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/to_text_icon"
+            android:onClick="speechToText"
+            android:layout_below="@id/speechToTextTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+</RelativeLayout>
